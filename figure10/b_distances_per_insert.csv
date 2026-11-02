@@ -1,0 +1,5 @@
+dataset,deltaann_pq,deltaann_exact,odinann_pq,odinann_exact
+SIFT,3418,1044,13415,141
+DEEP,3460,1026,14475,141
+SPACEV,3835,1199,15262,145
+MSTuring,3828,1186,10903,148

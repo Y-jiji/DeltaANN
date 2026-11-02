@@ -1,0 +1,5 @@
+c,throughput_k_ops_per_s,reprunes_per_replacement_at_batch_10,bound_2_over_c_minus_1
+1.5,6.934,0.788,4.000
+2,8.132,0.317,2.000
+3,9.316,0.080,1.000
+4,9.915,0.030,0.667

@@ -1,0 +1,5 @@
+variant,throughput_k_ops_per_s,pages_read_per_replacement,pages_written_per_replacement
+Full,8.498,106.3,12.8
+No PS,6.689,178.7,12.7
+No BR,2.465,439.5,40.2
+Neither,2.263,513.5,40.1

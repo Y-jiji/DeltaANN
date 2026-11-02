@@ -1,0 +1,5 @@
+beta,pages_read_per_replacement,qps_at_recall_0_90
+1.0,100.1,5280
+1.05,109.9,5256
+1.1,121.6,5312
+1.2,137.3,5253

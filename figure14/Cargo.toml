@@ -1,0 +1,37 @@
+# The DeltaANN mix driver and the data tools. `fnct` is the system's library, a submodule from a private repository.
+[package]
+name = "evaluation"
+version = "0.1.0"
+edition = "2024"
+autobins = false
+
+[[bin]]
+name = "crop"
+path = "0012/crop.rs"
+
+[[bin]]
+name = "gtbrute"
+path = "0012/gtbrute.rs"
+
+[[bin]]
+name = "bidir"
+path = "0012/bidir.rs"
+
+[[bin]]
+name = "instantmix"
+path = "0015/instantmix.rs"
+
+[[bin]]
+name = "gtmerge"
+path = "0019/gtmerge.rs"
+
+[dependencies]
+fnct = { path = "fnct/fnct" }
+arrow = "54"
+serde_json = "1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"

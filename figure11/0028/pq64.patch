@@ -1,0 +1,11 @@
+--- a/include/nbr/pq_nbr.h
++++ b/include/nbr/pq_nbr.h
+@@ -203,7 +203,7 @@
+       // [2] a 16-byte code is one inlined load and store, others go through memcpy
+       if (ndims == 16) {
+         for (uint64_t i = 0; i < n_ids; i++) {
+-          const __m128i code = _mm_loadu_si128((const __m128i *) (all_coords + ids[i] * 16));
++          const __m128i code = _mm_loadu_si128((const __m128i *) (all_coords + ids[i] * 16ul));
+           _mm_storeu_si128((__m128i *) (out + i * 16), code);
+         }
+         return;

@@ -1,0 +1,45 @@
+{
+  "taskGroups": [
+    {
+      "taskCount": 1,
+      "parallelism": 1,
+      "taskSpec": {
+        "runnables": [
+          {
+            "script": {
+              "text": "set -e\nexport BUCKET=BUCKETURI\nexport PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\nmkdir -p /var/tmp/boot\ncd /var/tmp/boot\ngcloud storage cp BUCKETURI/src/eval-COMMIT.tar .\ntar xf eval-COMMIT.tar '0028/gcprun.sh'\nbash '0028/gcprun.sh' COMMIT FNCT NAME MODE\n"
+            }
+          }
+        ],
+        "computeResource": {
+          "cpuMilli": 15000,
+          "memoryMib": 120000
+        },
+        "maxRunDuration": "172800s",
+        "maxRetryCount": 0
+      }
+    }
+  ],
+  "allocationPolicy": {
+    "instances": [
+      {
+        "policy": {
+          "machineType": "z3-highmem-16-highlssd",
+          "provisioningModel": "STANDARD"
+        }
+      }
+    ],
+    "location": {
+      "allowedLocations": [
+        "regions/us-central1"
+      ]
+    }
+  },
+  "labels": {
+    "purpose": "run028",
+    "machine": "z3"
+  },
+  "logsPolicy": {
+    "destination": "CLOUD_LOGGING"
+  }
+}

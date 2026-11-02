@@ -1,0 +1,45 @@
+{
+  "taskGroups": [
+    {
+      "taskCount": 1,
+      "parallelism": 1,
+      "taskSpec": {
+        "runnables": [
+          {
+            "script": {
+              "text": "set -e\nexport BUCKET=BUCKETURI\nexport PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\nmkdir -p /var/tmp/boot\ncd /var/tmp/boot\ngcloud storage cp BUCKETURI/src/eval-COMMIT.tar .\ntar xf eval-COMMIT.tar '0028/gcpodin.sh'\nbash '0028/gcpodin.sh' COMMIT PIPEANN FNCT FRESH NAME MODE CPUS KNOBS\n"
+            }
+          }
+        ],
+        "computeResource": {
+          "cpuMilli": CPUMILLI,
+          "memoryMib": MEMORYMIB
+        },
+        "maxRunDuration": "RUNMAX",
+        "maxRetryCount": 0
+      }
+    }
+  ],
+  "allocationPolicy": {
+    "instances": [
+      {
+        "policy": {
+          "machineType": "MACHINE",
+          "provisioningModel": "STANDARD"
+        }
+      }
+    ],
+    "location": {
+      "allowedLocations": [
+        "regions/us-central1"
+      ]
+    }
+  },
+  "labels": {
+    "purpose": "odin028",
+    "machine": "z3"
+  },
+  "logsPolicy": {
+    "destination": "CLOUD_LOGGING"
+  }
+}

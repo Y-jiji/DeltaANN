@@ -1,0 +1,14 @@
+[package]
+name = "figure2"
+version = "0.1.0"
+edition = "2024"
+autobins = false
+
+[[bin]]
+name = "crop"
+path = "0012/crop.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

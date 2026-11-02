@@ -1,0 +1,45 @@
+{
+  "taskGroups": [
+    {
+      "taskCount": 1,
+      "parallelism": 1,
+      "taskSpec": {
+        "runnables": [
+          {
+            "script": {
+              "text": "set -e\nexport BUCKET=BUCKETURI\nexport PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\nmkdir -p /var/tmp/boot\ncd /var/tmp/boot\ngcloud storage cp BUCKETURI/src/eval-COMMIT.tar .\ntar xf eval-COMMIT.tar '0015/gcpfull.sh'\nbash '0015/gcpfull.sh' COMMIT NAME ARM DATA MODE\n"
+            }
+          }
+        ],
+        "computeResource": {
+          "cpuMilli": 7000,
+          "memoryMib": 50000
+        },
+        "maxRunDuration": "432000s",
+        "maxRetryCount": 0
+      }
+    }
+  ],
+  "allocationPolicy": {
+    "instances": [
+      {
+        "policy": {
+          "machineType": "z3-highmem-8-highlssd",
+          "provisioningModel": "STANDARD"
+        }
+      }
+    ],
+    "location": {
+      "allowedLocations": [
+        "regions/us-central1"
+      ]
+    }
+  },
+  "labels": {
+    "purpose": "full",
+    "machine": "z3"
+  },
+  "logsPolicy": {
+    "destination": "CLOUD_LOGGING"
+  }
+}

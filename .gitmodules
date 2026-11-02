@@ -1,0 +1,93 @@
+[submodule "figure1/fnct"]
+	path = figure1/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure1/parlayann"]
+	path = figure1/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure2/parlayann"]
+	path = figure2/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure3/fnct"]
+	path = figure3/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure3/parlayann"]
+	path = figure3/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure7/fnct"]
+	path = figure7/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure7/fnct-reorder"]
+	path = figure7/fnct-reorder
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure7/pipeann"]
+	path = figure7/pipeann
+	url = https://github.com/Y-jiji/pipeann.git
+[submodule "figure7/parlayann"]
+	path = figure7/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure8/fnct"]
+	path = figure8/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure8/fnct-reorder"]
+	path = figure8/fnct-reorder
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure8/pipeann"]
+	path = figure8/pipeann
+	url = https://github.com/Y-jiji/pipeann.git
+[submodule "figure8/parlayann"]
+	path = figure8/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure9/fnct"]
+	path = figure9/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure9/fnct-reorder"]
+	path = figure9/fnct-reorder
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure9/pipeann"]
+	path = figure9/pipeann
+	url = https://github.com/Y-jiji/pipeann.git
+[submodule "figure9/parlayann"]
+	path = figure9/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure10/fnct"]
+	path = figure10/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure10/fnct-reorder"]
+	path = figure10/fnct-reorder
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure10/pipeann"]
+	path = figure10/pipeann
+	url = https://github.com/Y-jiji/pipeann.git
+[submodule "figure10/parlayann"]
+	path = figure10/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure11/fnct"]
+	path = figure11/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure11/pipeann"]
+	path = figure11/pipeann
+	url = https://github.com/Y-jiji/pipeann.git
+[submodule "figure11/PiPNN"]
+	path = figure11/PiPNN
+	url = https://github.com/ParAlg/PiPNN.git
+[submodule "figure12/fnct"]
+	path = figure12/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure12/pipeann"]
+	path = figure12/pipeann
+	url = https://github.com/Y-jiji/pipeann.git
+[submodule "figure12/parlayann"]
+	path = figure12/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure13/fnct"]
+	path = figure13/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure13/parlayann"]
+	path = figure13/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git
+[submodule "figure14/fnct"]
+	path = figure14/fnct
+	url = git@github.com:Y-jiji/fnct-db.git
+[submodule "figure14/parlayann"]
+	path = figure14/parlayann
+	url = https://github.com/cmuparlay/ParlayANN.git

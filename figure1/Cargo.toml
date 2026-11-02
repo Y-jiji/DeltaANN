@@ -1,0 +1,28 @@
+[package]
+name = "figure1"
+version = "0.1.0"
+edition = "2024"
+autobins = false
+
+[[bin]]
+name = "crop"
+path = "0012/crop.rs"
+
+[[bin]]
+name = "gtbrute"
+path = "0012/gtbrute.rs"
+
+[[bin]]
+name = "bidir"
+path = "0012/bidir.rs"
+
+[[bin]]
+name = "recallqps"
+path = "0012/recallqps.rs"
+
+[dependencies]
+fnct = { path = "fnct/fnct" }
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

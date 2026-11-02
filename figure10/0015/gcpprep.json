@@ -1,0 +1,49 @@
+{
+  "taskGroups": [
+    {
+      "taskCount": 1,
+      "parallelism": 1,
+      "taskSpec": {
+        "runnables": [
+          {
+            "script": {
+              "text": "set -e\nexport BUCKET=BUCKETURI\nexport PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\nmkdir -p /var/tmp/boot\ncd /var/tmp/boot\ngcloud storage cp BUCKETURI/src/eval-COMMIT.tar .\ntar xf eval-COMMIT.tar '0015/gcpprep.sh'\nbash '0015/gcpprep.sh' COMMIT NAME DS STEPS\n"
+            }
+          }
+        ],
+        "computeResource": {
+          "cpuMilli": 62000,
+          "memoryMib": 500000
+        },
+        "maxRunDuration": "21600s",
+        "maxRetryCount": 0
+      }
+    }
+  ],
+  "allocationPolicy": {
+    "instances": [
+      {
+        "policy": {
+          "machineType": "n2-highmem-64",
+          "provisioningModel": "STANDARD",
+          "bootDisk": {
+            "type": "pd-ssd",
+            "sizeGb": "1500"
+          }
+        }
+      }
+    ],
+    "location": {
+      "allowedLocations": [
+        "regions/us-central1"
+      ]
+    }
+  },
+  "labels": {
+    "purpose": "prep",
+    "machine": "n2"
+  },
+  "logsPolicy": {
+    "destination": "CLOUD_LOGGING"
+  }
+}

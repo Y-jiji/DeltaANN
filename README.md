@@ -1,6 +1,8 @@
+Each `run.sh` will download the dataset and run reproduction experiment. 
+Please make sure you setup google cloud authentication before running them. 
+
 | Run | Plot |
 |---|---|
-| `git clone https://github.com/Y-jiji/DeltaANN.git` | |
 | `DATA=/path/to/datasets WORK=/path/to/scratch bash DeltaANN/figure1/run.sh` | Figure 1 |
 | `DATA=/path/to/datasets WORK=/path/to/scratch bash DeltaANN/figure2/run.sh` | Figure 2 |
 | `DATA=/path/to/datasets WORK=/path/to/scratch bash DeltaANN/figure3/run.sh` | Figure 3 |
